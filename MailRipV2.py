@@ -647,8 +647,8 @@ def deliverytest(smtphost, smtpport, smtpuser, smtppass, smtpemail, proxyip, pro
         # generate email:
         letter = EmailMessage()
         letter.add_header('Subject', str(f'id {randomid} test result'))
-        letter.add_header('From', str(f'MailRipV2 <{smtpemail}>'))
-        letter.add_header('To', str(f'MailRip User <{attacker_mail}>'))
+        letter.add_header('From', str(f'Hello <{smtpemail}>'))
+        letter.add_header('To', str(f'Hello User <{attacker_mail}>'))
         letter.add_header('Reply-To', smtpemail)
         letter.add_header('MIME-Version', '1.0')
         letter.add_header('Content-Type', 'text/plain;charset=UTF-8')
